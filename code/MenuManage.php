@@ -123,19 +123,3 @@ while ($row = $stmt->fetch()) {
 
 </body>
 </html>
-
-<script>
-  var list = document.getElementById("ulist");
-  var item = document.createElement("li");
-  item.id="Orange";
-  item.innerHTML = "Orange";
-  list.appendChild(item);
-
-  function addFruit(){
-    var input = document.getElementsByName("fruit")[0].value;
-    var newItem = document.createElement("li");
-    newItem.id = input;
-    newItem.innerHTML = input;
-    list.appendChild(newItem);
-  }
-</script>
