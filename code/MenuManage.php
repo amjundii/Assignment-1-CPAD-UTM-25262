@@ -8,9 +8,6 @@ Group Name: Strange
 
 // By default, the menu list is sorted by type and name in ascending order, and no keyword is used to search menu
 $keywordMenu = "";
-$sortMenu = "";
-
-// Get the keyword for sortmenu from GET method, if any
 $sortMenu = isset($_GET['sortMenu']) ? $_GET['sortMenu'] : "type,name";
 
 // Get the keyword for searching menu from POST method, if any
