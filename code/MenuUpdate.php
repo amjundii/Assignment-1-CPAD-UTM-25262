@@ -14,9 +14,9 @@ if ($task == "Cancel") {
 } 
 else if ($task == "Update") {
 
-  $name = $_REQUEST['name'];
-  $type = $_REQUEST['type'];
-  $price = $_REQUEST['price'];
+  $name = $_POST['name'];
+  $type = $_POST['type'];
+  $price = $_POST['price'];
   
   $stmt = $pdo->prepare("UPDATE menus SET name = :name, type = :type, price = :price WHERE id = :id");
 

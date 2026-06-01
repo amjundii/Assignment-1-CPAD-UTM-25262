@@ -12,9 +12,9 @@ $form_complete = FALSE;
 if ($task == "Cancel") {    
 } 
 else if ($task == "Add") {
-  $name = $_REQUEST['name'];
-  $type = $_REQUEST['type'];
-  $price = $_REQUEST['price'];
+  $name = $_POST['name'];
+  $type = $_POST['type'];
+  $price = $_POST['price'];
   
   $stmt = $pdo->prepare("INSERT INTO menus (name, type, price) VALUES (:name, :type, :price)");
 
