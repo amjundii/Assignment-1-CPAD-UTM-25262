@@ -10,8 +10,8 @@ Group Name: Strange
 $keywordMenu = "";
 $sortMenu = isset($_GET['sortMenu']) ? $_GET['sortMenu'] : "type,name";
 
-// Get the keyword for searching menu from POST method, if any
-$keywordMenu = isset($_REQUEST['keywordMenu']) ? $_REQUEST['keywordMenu'] : "";
+// Get the keyword for searching menu from GET method, if any
+$keywordMenu = isset($_GET['keywordMenu']) ? $_GET['keywordMenu'] : "";
 
 // Assume that no field is being selected to sort the menu rows
 $sortFields = ['name'=>'', 'type,name'=>'', 'price'=>''];
