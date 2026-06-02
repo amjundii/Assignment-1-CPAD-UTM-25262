@@ -71,9 +71,9 @@ try {
         <tr>
           <th>No.</th>
           <th>ID</th>
-          <th><a href="MenuManage.php?sortMenu=name&keywordMenu=<?= $keywordMenu ?>">Name<?= $sortFields['name'] ?></a></th>
-          <th><a href="MenuManage.php?sortMenu=type,name&keywordMenu=<?= $keywordMenu ?>">Type <?= $sortFields['type,name'] ?></a></th>
-          <th><a href="MenuManage.php?sortMenu=price&keywordMenu=<?= $keywordMenu ?>">Price (RM) <?= $sortFields['price'] ?></a></th>
+          <th><a href="MenuManage.php?keywordMenu=<?= $keywordMenu ?>&sortMenu=name">Name<?= $sortFields['name'] ?></a></th>
+          <th><a href="MenuManage.php?keywordMenu=<?= $keywordMenu ?>&sortMenu=type,name">Type <?= $sortFields['type,name'] ?></a></th>
+          <th><a href="MenuManage.php?keywordMenu=<?= $keywordMenu ?>&sortMenu=price">Price (RM) <?= $sortFields['price'] ?></a></th>
           <th>Operations</th>
         </tr>
 <?php 
