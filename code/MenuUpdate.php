@@ -11,6 +11,8 @@ $id = $_REQUEST['id'];
 $task = isset($_REQUEST['task']) ? $_REQUEST['task'] : "";
 
 if ($task == "Cancel") {
+  header("Location: MenuManage.php");
+  exit; 
 } 
 else if ($task == "Update") {
 

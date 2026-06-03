@@ -20,8 +20,11 @@ if ($task == "Delete" || $task == "Cancel") {
       echo "Database Error: " . $ex->getMessage();
     }
   }
-  header("Location: MenuManage.php");
-  exit();
+
+  else {
+    header("Location: MenuManage.php");
+    exit;
+  }
 }
 
 // Query database to display menu info to be deleted

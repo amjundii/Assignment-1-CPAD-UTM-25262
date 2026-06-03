@@ -9,7 +9,9 @@ Group Name: ???
 $task = isset($_REQUEST['task']) ? $_REQUEST['task'] : "";
 $form_complete = FALSE;
 
-if ($task == "Cancel") {    
+if ($task == "Cancel") {   
+  header("Location: MenuManage.php");
+  exit; 
 } 
 else if ($task == "Add") {
   $name = $_POST['name'];
